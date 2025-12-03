@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard — Live Chart</title>
+<link rel="stylesheet" href="/admincss/admindashboard.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/admincss/admindashboard.css">
+</head>
+
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo"></span> AdminPanel</div>
+      <div class="sub">Control and monitor live metrics</div>
+      <nav class="nav">
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <section class="grid">
+        <div class="card chart-card">
+          <h3>Live Revenue (+1000/sec)</h3>
+          <div id="revenueDisplay">0</div>
+          <canvas id="liveChart"></canvas>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- External JS -->
+  <script src="/adminjs/script.js"></script>
+</body>
+</html>
